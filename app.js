@@ -19,14 +19,14 @@ app.post('/api', function (req, res) {
     request.post(
         'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook',
         {
-            json: body
+            form: body
         },
         function(error, response, body) {
 
         }
     );
 
-    res.send(200);
+    res.sendStatus(200);
 });
 
 app.listen(port, function () {
