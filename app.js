@@ -29,7 +29,7 @@ app.post('/api/rethinkdev-developer-edition.na59.force.com/services/apexrest/gif
 
     res.redirect(307, url);
 
-    res.sendStatus(200);
+    // res.writ(200);
 });
 
 app.listen(port, function () {
