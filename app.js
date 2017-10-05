@@ -15,10 +15,14 @@ app.post('/api/rethinkdev-developer-edition.na59.force.com/services/apexrest/gif
     var url = 'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook';
     var body = req.body;
 
-console.log('headers');
+    console.log('headers');
     console.log(req.headers);
     console.log('body');
     console.log(req.body);
+    console.log('params');
+    console.log(req.params);
+    console.log('query');
+    console.log(req.query);
 
     // request.post(
     //     url,
