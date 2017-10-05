@@ -14,7 +14,7 @@ app.get('/api', function(req, res) {
 app.post('/api', function (req, res) {
     var body = req.body;
 
-    console.log(body);
+    console.log(typeof body);
 
     request.post(
         'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook',
