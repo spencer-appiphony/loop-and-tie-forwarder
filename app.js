@@ -11,10 +11,12 @@ app.get('/api', function(req, res) {
     res.send('Hello', 200);
 })
 
-app.post('/api', function (req, res) {
+app.post('/api/rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook', function (req, res) {
     var body = req.body;
 
     console.log(typeof body);
+    console.log(body.data);
+    console.log(body.included);
 
     request.post(
         'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook',
