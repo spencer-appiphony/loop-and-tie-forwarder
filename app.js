@@ -5,7 +5,7 @@ var request = require('request');
 var port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/api', function(req, res) {
     res.send('Hello', 200);
