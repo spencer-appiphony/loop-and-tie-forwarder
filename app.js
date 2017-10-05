@@ -12,7 +12,8 @@ app.get('/api', function(req, res) {
 })
 
 app.post('/api/rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook', function (req, res) {
-    var url = 'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook';
+    // var url = 'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook';
+    var url = 'https://spencer-resttest-developer-edition.na73.force.com/services/apexrest/api';
     var body = req.body;
 
     console.log('headers');
