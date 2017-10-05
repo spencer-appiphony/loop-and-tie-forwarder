@@ -14,19 +14,17 @@ app.get('/api', function(req, res) {
 app.post('/api/rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook', function (req, res) {
     var body = req.body;
 
-    // request.post(
-    //     'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook',
-    //     {
-    //         form: body
-    //     },
-    //     function(error, response, body) {
-    //
-    //     }
-    // );
-    //
-    // res.sendStatus(200);
+    request.post(
+        'https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook',
+        {
+            form: body
+        },
+        function(error, response, body) {
 
-    req.redirect('https://rethinkdev-developer-edition.na59.force.com/services/apexrest/giftHook');
+        }
+    );
+
+    res.sendStatus(200);
 });
 
 app.listen(port, function () {
