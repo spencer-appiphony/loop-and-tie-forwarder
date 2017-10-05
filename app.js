@@ -6,6 +6,10 @@ var request = require('request');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.get('/', function(req, res) {
+    res.send('Hello');
+})
+
 app.post('/', function (req, res) {
     var body = req.body;
 
@@ -18,6 +22,8 @@ app.post('/', function (req, res) {
 
         }
     );
+
+    res.send(200);
 });
 
 app.listen(3000, function () {
