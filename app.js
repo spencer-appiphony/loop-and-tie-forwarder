@@ -7,11 +7,11 @@ var port = process.env.PORT || 8080;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/', function(req, res) {
-    res.send('Hello');
+app.get('/api', function(req, res) {
+    res.send('Hello', 200);
 })
 
-app.post('/', function (req, res) {
+app.post('/api', function (req, res) {
     var body = req.body;
 
     request.post(
